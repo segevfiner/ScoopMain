@@ -1,0 +1,23 @@
+{
+    "version": "0.5.1",
+    "description": "Keep your computer awake",
+    "homepage": "https://github.com/segevfiner/keepawake-rs",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/segevfiner/keepawake-rs/releases/download/v0.5.1/keepawake-v0.5.1-x86_64-pc-windows-msvc.tar.gz",
+            "hash": "e2aa1dc828643af0022795fe1f5078688e6a29b815e7b50d4051342035d7b31d",
+            "extract_dir": "keepawake-v0.5.1-x86_64-pc-windows-msvc"
+        }
+    },
+    "bin": "keepawake.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/segevfiner/keepawake-rs/releases/download/v$version/keepawake-v$version-x86_64-pc-windows-msvc.tar.gz",
+                "extract_dir": "keepawake-v$version-x86_64-pc-windows-msvc"
+            }
+        }
+    }
+}
